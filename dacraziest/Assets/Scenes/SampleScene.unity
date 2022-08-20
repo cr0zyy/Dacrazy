@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 388919974}
   - component: {fileID: 388919973}
   - component: {fileID: 388919972}
-  - component: {fileID: 388919971}
+  - component: {fileID: 388919975}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: Untagged
@@ -158,20 +158,6 @@ Transform:
   m_Father: {fileID: 1948142907}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &388919971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388919969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ce902a1ba5eab40b896a0ad786e2ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerSensitivity: 100
-  playerbody: {fileID: 1948142907}
 --- !u!114 &388919972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +242,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &388919975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388919969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2ce902a1ba5eab40b896a0ad786e2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSensitivity: 100
+  playerbody: {fileID: 1948142907}
 --- !u!1 &781562906
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,8 +622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSpeed: 10
-  gravity: -25
-  jumpHeight: 50
+  gravity: -30
+  jumpHeight: 1000
   controller: {fileID: 1948142903}
   groundCheck: {fileID: 1649728302}
   groundMask:
@@ -787,12 +787,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42737633, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4273752, b: 0.6784314, a: 1}
   colorDepth: 2.59
-  horizonColor: {r: 0, g: 0.22737634, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22737521, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018861, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30188498, a: 0}
   shoreStrength: 0
   shoreBlend: 0
   shoreDepth: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Mousetingz : MonoBehaviour
+public class MouseMovement : MonoBehaviour
 {   
 
     public float PlayerSensitivity = 100f;
