@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    public float PlayerSpeed = 20f;
-    public float gravity = -15f;
+    public float PlayerSpeed = 10f;
+    public float gravity = -25f;
     public float jumpHeight = 50f;
     float yVelocity = 0f;
 
@@ -45,7 +45,5 @@ public class PlayerMovement : MonoBehaviour
 
         //apply movement change and diy gravity
         controller.Move(move * PlayerSpeed * Time.deltaTime + new Vector3(0f, yVelocity * Time.deltaTime, 0f));
-
-        Debug.Log(isGrounded);
     }
 }
